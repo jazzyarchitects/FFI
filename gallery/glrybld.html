@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Gallery-bloodline</title>
+  <link rel="shortcut icon" href="imgs/header.png" />
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="w3-theme-black.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="photo-gallery.js"></script>
+<style>
+      ul {         
+          padding:0 0 0 0;
+          margin:0 0 0 0;
+      }
+      ul li {     
+          list-style:none;
+          margin-bottom:25px;           
+      }
+      ul li img {
+          cursor: pointer;
+      }
+      .modal-body {
+          padding:5px !important;
+		  
+      }
+      .modal-content {
+          border-radius:0;
+      }
+      .modal-dialog img {
+          text-align:center;
+          margin:0 auto;
+		  height:350px;width:488px;
+      }
+    .controls{          
+        width:50px;
+		height:25px;
+        display:block;
+        font-size:11px;
+        padding-top:8px;
+        font-weight:bold;          
+    }
+    .next {
+        float:right;
+        text-align:right;
+    }
+      /*override modal for demo only*/
+      .modal-dialog {
+          max-width:500px;
+          padding-top: 90px;
+      }
+      @media screen and (min-width: 768px){
+          .modal-dialog {
+              width:500px;
+              padding-top: 90px;
+          }          
+      }
+      @media screen and (max-width:1500px){
+          #ads {
+              display:none;
+          }
+      }
+	   .test img {cursor: pointer;border: 10px solid transparent;}
+.test img:hover {border: 10px solid #f1f1f1;}
+body,h1,h2,h3,h4,h5 {font-family: 'Montserrat', sans-serif !important;}
+.w3-topnav {width:100%;position:fixed;z-index:1;}
+.w3-topnav a:first-child:hover{color: #fff;border-bottom: 3px solid transparent;}
+@media only screen and (max-width: 601px) {.w3-topnav {position:static;}}
+
+  body {
+      position: relative;
+  }
+  .affix {
+      top: 120px;
+  }
+  div.col-sm-9 div {
+      height: auto;
+      font-size: 28px;
+  }
+  
+  </style>
+
+  </head>
+  
+ <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+<header class="w3-container">
+<ul class="list-inline">
+<li><img src="imgs/ffi-logo.png" class="img-responsive" ></li><li><img src="imgs/header.png" class="img-responsive"></li></ul>
+  <h4>Fast Forward To Changing Lives</h4>
+</header>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Chapters <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="jgt.html">Jagriti</a></li>
+                  <li><a href="bld.html">Bloodline</a></li>
+                  <li><a href="dsh.html">Disha</a></li>
+                  <li><a href="esp.html">Escape</a></li>
+              </ul>
+          <li><a href="about us.html">About Us</a></li>
+          <li><a href="get%20involved.html">Get Involved</a></li>
+          <li><a href="glry.html">Gallery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="cnts.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="w3-row-padding">
+<div class="w3-col-sm-8" style="width:100%">
+<div class="w3-card-16">
+<img src="imgs/topbld.jpg" style="width:100%;height:200px;">
+
+<div class="w3-container">
+<center><h3>Bloodline</h3></center>
+</div>
+</div>
+</div>
+</div><br><hr>
+<div class="w3-container">
+<ul class="row">
+  <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+    <img class="img-responsive w3-card-8" src="imgs/bl1.jpg" style="height:200px;">
+  </li>
+  <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+    <img class="img-responsive w3-card-8" src="imgs/bl2.jpg" style="height:200px;">
+  </li>
+  <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+    <img class="img-responsive w3-card-8" src="imgs/bl3.jpg" style="height:200px;">
+  </li>
+  <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+    <img class="img-responsive w3-card-8" src="imgs/bl4.jpg" style="height:200px;">
+  </li>
+  <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+    <img class="img-responsive w3-card-8" src="imgs/bl5.jpg" style="height:200px;">
+  </li>
+  <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+    <img class="img-responsive w3-card-8" src="imgs/bl6.jpg" style="height:200px;">
+  </li>
+  <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+    <img class="img-responsive w3-card-8" src="imgs/blood2.jpg" style="height:200px;">
+  </li>
+  <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+    <img class="img-responsive w3-card-8" src="imgs/blood3.jpg" style="height:200px;">
+  </li>
+  <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+    <img class="img-responsive w3-card-8" src="imgs/blood1.jpg" style="height:200px;">
+  </li>
+</ul>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">         
+          <div class="modal-body">                
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></div>
+
+ <hr> <ul class="nav nav-pills">
+    <li><a href="glryjgt.html">Jagriti</a></li>
+    <li><a href="glrybld.html">Bloodline</a></li>
+    <li><a href="glryesp.html">Escape</a></li>
+    <li><a href="glrydsh.html">Disha</a></li>
+    <li><a href="glryind.html">Independence Day</a></li>
+    <li><a href="#">Umeed</a></li>
+    <li><a href="#">Basant</a></li>
+  </ul>
+  <footer class="w3-container w3-padding-28 w3-khaki w3-center" style="width:100%"><div class=" w3-left-align">
+<h4>ISM Dhanbad<br>
+Jharkhand , India<br>
+Phone: 1(234) 567 8910<br>
+E-mail: <a href="">fastforwardindia.org@gmail.com</a><br></h4>
+</div><br>
+<div style="position:relative;bottom:103px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-yellow">Go To Top</span>   
+    <a class="w3-btn w3-indigo" href="glrybld.html"><span class=" w3-medium">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <h4>Follow Us</h4>
+  <a class="w3-btn-floating w3-brown" href="javascript:void(0)" title="Instagram"><i class="fa fa-instagram"></i></a>
+  <a class="w3-btn-floating w3-blue" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-indigo" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-btn-floating w3-red" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-btn-floating w3-darkblue" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+ 
+	
+</footer>
+
+</body>
+  </html>
+  
